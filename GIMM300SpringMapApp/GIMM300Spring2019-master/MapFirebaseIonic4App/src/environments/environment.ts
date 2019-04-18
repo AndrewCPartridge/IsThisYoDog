@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA0DzlkjswVEjennWWVTEbV6NGQqKPDFiY",
-    authDomain: "mapstutorial-854da.firebaseapp.com",
-    databaseURL: "https://mapstutorial-854da.firebaseio.com",
-    projectId: "mapstutorial-854da",
-    storageBucket: "mapstutorial-854da.appspot.com",
-    messagingSenderId: "168348024758"
+    apiKey: "AIzaSyBInyiYUl5hD_ZH_jS4SfGQ0wWuOw6HjgE",
+      authDomain: "mapapp-236819.firebaseapp.com",
+      databaseURL: "https://mapapp-236819.firebaseio.com",
+      projectId: "mapapp-236819",
+      storageBucket: "mapapp-236819.appspot.com",
+      messagingSenderId: "108260920176"
   }
 };
 
