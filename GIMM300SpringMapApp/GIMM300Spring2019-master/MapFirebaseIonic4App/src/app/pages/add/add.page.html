@@ -10,27 +10,27 @@
 <ion-content>
   <ion-item>
     <ion-label>
-      Location title:
+      Title:
     </ion-label>
-    <ion-input [(ngModel)]="location.title" placeholder="title...."></ion-input>
+    <ion-input [(ngModel)]="location.title" placeholder="ex:Dog Breed..."></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>
-      Location content:
+   Details:
     </ion-label>
-    <ion-input [(ngModel)]="location.content" placeholder="title...."></ion-input>
+    <ion-input [(ngModel)]="location.content" placeholder="Description..."></ion-input>
   </ion-item>
 
   <ion-card>
-    <ion-button size="large" (click)="openCamera()">Take Picture</ion-button>
+    <ion-button size="" (click)="openCamera()">Take Picture</ion-button>
     <ion-card-content>
-      Picture:
+     
       <img [src]="base64Image" *ngIf="base64Image"/>
     </ion-card-content>
   </ion-card>
 
-  <ion-button size="large" (click)="addLocation(location)" routerLink="../home"
-  routerDirection="forward">Add Location and Content</ion-button>
+  <ion-button  size="" (click)="addLocation(location)" routerLink="../home"
+  routerDirection="forward">Finish</ion-button>
 
 </ion-content>
