@@ -23,7 +23,7 @@
   </ion-item>
 
   <ion-card>
-    <ion-button size="" (click)="openCamera()">Take Picture</ion-button>
+    <ion-button  size="default"id=pictureButt (click)="openCamera()">Take Picture</ion-button>
     <ion-card-content>
      
       <img [src]="base64Image" *ngIf="base64Image"/>
