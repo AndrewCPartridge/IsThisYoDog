@@ -11,12 +11,17 @@ h4 {
 
 }
 
+#icondiv {
+  width: 100%;
+}
+
 #icon {
   max-width: 200px;
- padding-left: 4rem;
- padding-top: 1rem;
-
+  padding-top: 1rem;
+  display: block;
+  margin: auto;
 }
+
 #button{
   --background: rgb(230,137,37);
   --background-activated: rgb(179,103,19);
