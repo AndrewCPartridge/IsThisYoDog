@@ -63,7 +63,10 @@ addMarker(location: any){
   let marker = new google.maps.Marker({
     map: this.map,
     animation: google.maps.Animation.DROP,
-    position: latLng
+    position: latLng,
+    icon: {
+      url: "../assets/paw-pin.png", scaledSize: new google.maps.Size(30, 30)
+    }
   });
 
   this.addInfoWindow(marker, location);
