@@ -9,27 +9,27 @@
 
 <ion-content>
 
-    <ion-button id=savebutt (click)="editLocation(location)" routerLink="../home"
+    <ion-button id=savebutt (click)="editLocation(location)" routerLink="../../home"
     routerDirection="forward">Save Changes</ion-button>
-    <ion-button block clear (click)="deleteLocation(location)" routerLink="../home"
+    <ion-button id="deletebutt" block clear (click)="deleteLocation(location)" routerLink="../../home"
     routerDirection="forward">Delete</ion-button>
 
       <ion-item>
     <ion-label>
     Location title:
     </ion-label>
-    <ion-input [(ngModel)]="location.title" placeholder="title..."></ion-input>
+    <ion-input [(ngModel)]="location.title" placeholder="ex:Dog Breed..."></ion-input>
   </ion-item>
 
   <ion-item>
       <ion-label>
         Location content:
       </ion-label>
-      <ion-input [(ngModel)]="location.content"></ion-input>
+      <ion-input [(ngModel)]="location.content" placeholder="Description..."></ion-input>
     </ion-item>
 
     <ion-card>
-      <ion-button expand=block clear (click)="openCamera()">Take Picture</ion-button>
+      <ion-button id="picturebutt" expand=block clear (click)="openCamera()">Take Picture</ion-button>
         <ion-card-content>
           Picture:
           <img [src]="base64Image" *ngIf="base64Image" />
