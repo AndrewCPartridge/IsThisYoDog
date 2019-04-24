@@ -28,9 +28,11 @@ export class ListPage implements OnInit {
   editLocation(location: Location) {
     this.firebaseService.editLocation(location);
   }
+
   deleteLocation(location: Location) {
     this.firebaseService.deleteLocation(location);
   }
+
   openCamera(){
       const options: CameraOptions = {
         quality: 100,
