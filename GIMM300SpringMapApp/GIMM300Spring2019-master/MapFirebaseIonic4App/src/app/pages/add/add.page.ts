@@ -30,21 +30,22 @@ export class AddPage implements OnInit {
       console.log('Error getting location', error);
     });
   }
-addLocation(location: Location){
-  this.firebaseService.addLocation(location);
-}
-openCamera(){
-  const options: CameraOptions = {
-    quality: 50,
-    destinationType: this.camera.DestinationType.DATA_URL,
-    encodingType: this.camera.EncodingType.JPEG,
-    mediaType: this.camera.MediaType.PICTURE
+  addLocation(location: Location){
+    this.firebaseService.addLocation(location);
   }
-  this.camera.getPicture(options).then((imageData) => {
-    this.base64Image = "data:image/jpeg;base64," + imageData;
-    this.location.picture = this.base64Image;
-  }, (err) => {
-  });
-}
+  openCamera(){
+    const options: CameraOptions = {
+      quality: 50,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    }
+    this.camera.getPicture(options).then((imageData) => {
+      this.base64Image = "data:image/jpeg;base64," + imageData;
+      this.location.picture = this.base64Image;
+    }, (err) => {
+      console.log("Camera error: " + err);
+    });
+  }
 
 }
