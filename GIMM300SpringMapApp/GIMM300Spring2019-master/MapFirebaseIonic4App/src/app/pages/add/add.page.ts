@@ -35,6 +35,7 @@ export class AddPage implements OnInit {
   }
   openCamera(){
     const options: CameraOptions = {
+      correctOrientation: true,
       quality: 50,
       destinationType: this.camera.DestinationType.DATA_URL,
       encodingType: this.camera.EncodingType.JPEG,

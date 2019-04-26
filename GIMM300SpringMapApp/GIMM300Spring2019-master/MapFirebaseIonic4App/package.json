@@ -29,12 +29,14 @@
     "@ionic/pro": "2.0.4",
     "angularfire2": "^5.1.2",
     "cordova-android": "8.0.0",
+    "cordova-browser": "6.0.0",
     "cordova-plugin-camera": "4.0.3",
     "cordova-plugin-geolocation": "4.0.1",
     "core-js": "^2.5.4",
     "firebase": "^5.9.1",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.4.0",
+    "web": "0.0.2",
     "zone.js": "~0.8.29"
   },
   "devDependencies": {
@@ -85,7 +87,8 @@
       "cordova-plugin-ionic-keyboard": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ]
   }
 }
